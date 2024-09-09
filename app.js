@@ -6,10 +6,10 @@ const cors = require('cors'); // Add this line
 const bcrypt = require('bcryptjs');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const Admin = require('../models/Admin');
-const User = require('../models/User');
-const Attendance = require('../models/Attendance');
-const Leave = require("../models/Leave");
+const Admin = require('./models/Admin');
+const User = require('./models/User');
+const Attendance = require('./models/Attendance');
+const Leave = require("./models/Leave");
 
 
 
