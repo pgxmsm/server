@@ -2,7 +2,7 @@ const express = require('express');
 
 const mongoose = require('mongoose');
 const cors = require('cors'); // Add this line
-require('dotenv').config();
+// require('dotenv').config();
 
 
 
@@ -19,7 +19,7 @@ app.get('/about', (req, res) => {
 
 
 
-const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret_key';
+const jwtSecret =  'your_jwt_secret_key';
 
 // Register
 router.post('/register', async (req, res) => {
