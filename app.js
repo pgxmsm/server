@@ -3,6 +3,15 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors'); // Add this line
 // require('dotenv').config();
+const bcrypt = require('bcryptjs');
+const router = express.Router();
+const jwt = require('jsonwebtoken');
+const Admin = require('../models/Admin');
+const User = require('../models/User');
+const Attendance = require('../models/Attendance');
+const Leave = require("../models/Leave");
+
+
 
 
 
